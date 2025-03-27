@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="containerHeader">
+
+        <div class="header">
+            <p id="title"><strong>Coin Converter</strong></p>    
+        </div>
+
+    </header>
+
+    <main id="coontainer">
+
+        <div id="coinTargetArea">
+            <select id="coinTarget">
+                <option value="">Escolha uma moeda</option>
+            </select>
+        </div>
+
+        <div id="CoinBaseArea">
+            <input type='number' id="coinBaseValue" placeholder="0.00" step='any' autocomplete="off">
+        </div>
+
+        <div id="botao">
+            <button id="converter">Converter</button>
+        </div>
+
+        <div id="containerLoading">
+            <p id="loading" style="display:none">Convertendo...</p>
+        </div>
+
+        <div>
+            <p id="rated"></p>
+        </div>
+
+    </main>
+    <footer>
+        <div id="rodape">
+            <p id="copyright">&copy; 2025 A. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="src/Convensor.js"></script>
+</body>
+</html>

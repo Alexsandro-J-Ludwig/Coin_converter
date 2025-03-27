@@ -1,0 +1,118 @@
+body {
+    background-image: url('https://media2.giphy.com/media/JtBZm3Getg3dqxK0zP/giphy.gif?cid=6c09b952la3qoxm859e1s2982g7e3u3zl4uwrem78squ6zvp&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1950px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#coontainer{
+    background-color: rgba(0, 0, 0, 0.63);
+    width: 29.7%;
+    left: 35.45vw;
+    position: absolute;
+    height: 50%;;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+header {
+    position: relative;
+    text-align: center;
+    background-color: rgba(68, 68, 68, 0.705);
+    height: 5vh;
+    text-justify: center; 
+    width: 30%;
+    left: 35vw;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#title {
+    color: rgb(189, 189, 189);
+    justify-content: center;
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+#CoinBaseArea{
+    justify-content: center;
+    display: flex;
+}
+
+#coinTargetArea {
+    justify-content: center;
+    display: flex;
+}
+
+#coinTarget {
+    outline: none;
+    border: none;
+    margin: 30px;
+    border-radius: 10px;
+    width: 70%;
+    text-align: center;
+    background-color: rgba(216, 216, 216, 0.473);
+}
+
+#coinBaseValue {
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: rgba(216, 216, 216, 0.473);
+    text-align: center;
+}
+
+#botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 30px
+}
+
+#converter {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.514);
+}
+
+#loading {
+    color: rgba(255, 255, 255, 0.616);
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 80px
+}
+
+#rated {
+    color: rgba(255, 255, 255, 0.616);
+    text-align: center;
+    margin: 80px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.63);
+    display: flex;
+    top:  92vh;
+    position: absolute;
+    width: 100%;
+    right: 2px;
+    height: 20%;
+}
+
+#rodape {
+    position: absolute;
+    left: 10px;
+    top: 40px;
+}
+
+#copyright {
+    color: rgba(255, 255, 255, 0.493);
+    font-size: 14px;
+}
