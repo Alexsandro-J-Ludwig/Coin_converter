@@ -1,5 +1,3 @@
-let apiKey = '6436b68504c29b4bca9ac8c6'
-
 addEventListener('DOMContentLoaded', conversionRated)
 
 let converter = document.getElementById('converter');
@@ -13,12 +11,12 @@ async function getData() {
     let coinBaseValue = document.getElementById('coinBaseValue').value
     
     if(coinTarget ==='' || coinBaseValue === '') {
-        alert('Os capoms não podem estar vazios')
+        alert('Os campos não podem estar vazios')
         return Error
     }
 
     try{
-        const response = await fetch(`https://v6.exchangerate-api.com/v6/${apiKey}/pair/BRL/${coinTarget}/${coinBaseValue}`)
+        const response = await fetch(`http://localhost:5001/api?coinTarget=${coinTarget}&coinBaseValue=${coinBaseValue}`)
         if (!response.ok){
             throw new Error('Erro ao obter dados da API')
         }
@@ -26,10 +24,10 @@ async function getData() {
         const data = await response.json();
 
         let rated = document.getElementById('rated')
-        rated.innerHTML = (data.conversion_result).toFixed(2) + ' ' + data.target_code + ' - Um real vale: ' + data.conversion_rate
+        rated.innerHTML = (data.conversion_result).toFixed(2) + ' ' + data.target_code
 
     } catch (error) {
-        console.error('error')
+        console.error(error)
     } finally {
         loading.style.display = 'none'
     }
@@ -37,7 +35,7 @@ async function getData() {
 
 async function conversionRated(){
     try{
-        const response = await fetch(`https://v6.exchangerate-api.com/v6/${apiKey}/latest/BRL`)
+        const response = await fetch(`http://localhost:5001/rate`)
         if(!response.ok) {
             throw new Error('Não foi possívvel obter os dados da API')
         }
@@ -54,7 +52,7 @@ async function conversionRated(){
             });
         
     } catch (error) {
-        console.error('error')
+        console.error(error)
     }
 }
 conversionRated()
