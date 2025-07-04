@@ -5,5 +5,8 @@
     "dotenv": "^16.6.0",
     "express": "^5.1.0"
   },
-  "type": "module"
+  "type": "module",
+  "scrips": {
+     "node index.js"
+  }
 }
