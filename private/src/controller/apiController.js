@@ -12,8 +12,8 @@ export async function getCoin(req, res) {
 
         return res.json(response.data)
 
-    } catch (error) {
-        console.error(error)
+    } catch (err) {
+        console.error(err)
         res.json("Error ocorred in external conversor API")
     };
 };
@@ -24,8 +24,8 @@ export async function getRated(req, res) {
 
         return res.json(response.data);
 
-    } catch (error) {
-        console.error(error);
+    } catch (err) {
+        console.error(err);
         res.json("An error occurred while requesting exchange rates from the external API");
     };
 };
