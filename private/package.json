@@ -6,6 +6,6 @@
   },
   "type": "module",
   "scrips": {
-    "start": "node --env-file=.env index.js"
+    "start": "node index"
   }
 }
