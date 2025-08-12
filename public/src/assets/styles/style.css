@@ -8,9 +8,9 @@ body {
 }
 
 #coontainer{
-    background-color: rgba(0, 0, 0, 0.63);
-    width: 29.7%;
-    left: 35.45vw;
+    background-color: rgba(0, 0, 0, 0.377);
+    width: 400px;
+    left: 400px;
     position: absolute;
     height: 50%;;
     border-bottom-left-radius: 20px;
@@ -22,14 +22,15 @@ header {
     background-color: rgba(68, 68, 68, 0.705);
     height: 8vh;
     text-justify: center; 
-    width: 30%;
-    left: 35vw;
+    width: 400px;
+    left: 391.6px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
+
 #title {
-    color: rgb(189, 189, 189);
+    color: rgb(255, 255, 255);
     justify-content: center;
     font-size: 35px;
     font-family: sans-serif;
